@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo's</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../css/index.css" >
+</head>
+<body id="main-content">
+    <header>
+        <h1>{Mark , Meet} your daily tasks here!</h1>
+    </header>
+    <p id="hq"><i>Check your list over here!</i></p>
+    <main>
+<!-- This is First Section -->
+        <section>
+            <div class="button-container">
+                <a class="primary-button" id="add-list-button"><i class="fas fa-plus"></i> Add Todo</a>
+            </div>
+            <div id="todo-container">
+                <div id="todo-input-container" style="display: block;">
+                    <label class="q1">Pick a Date&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;</label><input type="date">
+                    <button class="remove-button" id="rm-btn"><i class="fas fa-times"></i></button>
+                    <button class="add-button" id="add-btn"><i class="fas fa-plus"></i></button>
+                    <br>
+                    <div>
+                        <input type="text" class="todo-input" placeholder="Enter your todo">
+                    </div>
+                </div>
+                <button class="post-button" id="post-btn">POST</button>
+            </div>
+        </section>
+<!-- This is Second Section -->
+        <section>
+        <div id="empty-container">
+            
+        </div>
+        </section>
+<!-- This is Third Section -->
+        <section>
+        <div class="button-container">
+            <a class="secondary-button" id="view-todos-button"><i class="fas fa-list"></i> View Todos</a>
+        </div>
+        <div id="todo-view-container" style="display: none;">
+            <div id="todo-input-container" style="display: block;">
+                <label class="q1">Enter a date&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;</label><input type="text" id="search-date-input" placeholder="YYYY-MM-DD">
+                <button class="search-button" id="search-btn">SEARCH</button>
+                <button class="delete-button" id="del-btn"><i class="fas fa-trash"></i></button>
+                <br>
+                <div id="todo-view-contents">
+                   
+                </div>
+            </div>
+        </div>
+        </section>
+    </main>
+</body>
+<script src="../js/index.js"></script>
+</html>
